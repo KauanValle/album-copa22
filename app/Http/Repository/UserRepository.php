@@ -15,6 +15,11 @@ class UserRepository
         $this->model = new User();
     }
 
+    public function getAllUser()
+    {
+        return $this->model::all();
+    }
+
     public function getUserByEmail($email)
     {
         return $this->model->newQuery()

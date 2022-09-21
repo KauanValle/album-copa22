@@ -72,10 +72,15 @@ class AuthService
 
     public function getExpirationTime($tokenJwt)
     {
-        date_default_timezone_set('America/Sao_Paulo');
-        $token = new Token($tokenJwt);
+        try{
+            date_default_timezone_set('America/Sao_Paulo');
+            $token = new Token($tokenJwt);
+            $objectToken = JWTAuth::setToken($token);
+            $expiration = JWTAuth::decode($objectToken->getToken())->get('exp');
+        }catch (\Exception $e){
+            return false;
+        }
 
-        $payload = JWTAuth::decode($token);
-        return date('Y-m-d H:i:s', $payload->get('exp'));
+        return date('Y-m-d H:i:s', $expiration);
     }
 }
