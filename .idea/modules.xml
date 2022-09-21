@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../EmailERP/.idea/EmailERP.iml" filepath="$PROJECT_DIR$/../EmailERP/.idea/EmailERP.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/albumCopa.iml" filepath="$PROJECT_DIR$/.idea/albumCopa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rest_api/.idea/rest_api.iml" filepath="$PROJECT_DIR$/../rest_api/.idea/rest_api.iml" />
     </modules>
   </component>
 </project>

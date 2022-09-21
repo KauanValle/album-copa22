@@ -107,5 +107,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="EmailERP" />
+    <orderEntry type="module" module-name="rest_api" />
   </component>
 </module>

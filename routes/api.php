@@ -24,6 +24,7 @@ Route::group(['middleware' => ['apiJwt']], function (){
     Route::prefix('/user')->group(
         function () {
             Route::post('/create', 'UserController@create');
+            Route::get('/getAll', 'UserController@getAllUsers');
         }
     );
 });
